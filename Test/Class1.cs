@@ -12,30 +12,18 @@ namespace Test
 {
     class Class1
     {
-        int Number;
-        string Name;
+
+        string fname;
         public Class1(string name)
         {
-            Name = name;
+            fname = name;
+            FirstName = name;
         }
 
-    public Class1(int number)
+        public string FirstName
         {
-            Number = number;    
+            get{ return fname; }
         }
 
-        public int numberMethod()
-         {
-            return Number;
-         }
-
-        public static void Jassem(string jassem)
-        {
-            MessageBox.Show(jassem);
-        }
-        public static void Jassem(int jassem)
-        {
-            MessageBox.Show(jassem.ToString());
-        }
     }
 }

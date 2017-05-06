@@ -23,7 +23,9 @@ namespace Test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Class1.Jassem(6);
+            Class1 newName = new Class1("jassem");
+            
+            MessageBox.Show(newName.FirstName);
         }
 
 
